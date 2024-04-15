@@ -26,12 +26,12 @@ class Onboarding extends React.Component {
             style={{ height, width, zIndex: 1 }}
           />
         </Block>
-        <Block center>
+        {/* <Block center>
           <Image source={Images.LogoOnboarding} style={styles.logo} />
-        </Block>
+        </Block> */}
         <Block flex space="between" style={styles.padded}>
             <Block flex space="around" style={{ zIndex: 2 }}>
-              <Block style={styles.title}>
+              {/* <Block style={styles.title}>
                 <Block>
                   <Text color="white" size={60}>
                     Design
@@ -47,7 +47,7 @@ class Onboarding extends React.Component {
                     Fully coded React Native components.
                   </Text>
                 </Block>
-              </Block>
+              </Block> */}
               <Block center>
                 <Button
                   style={styles.button}
@@ -55,7 +55,7 @@ class Onboarding extends React.Component {
                   onPress={() => navigation.navigate("App")}
                   textStyle={{ color: argonTheme.COLORS.BLACK }}
                 >
-                  Get Started
+              FOOTBALL
                 </Button>
               </Block>
           </Block>
@@ -67,7 +67,8 @@ class Onboarding extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.COLORS.BLACK
+    backgroundColor: theme.COLORS.BLACK,
+ 
   },
   padded: {
     paddingHorizontal: theme.SIZES.BASE * 2,

@@ -5,6 +5,7 @@ export default {
     SECONDARY: '#F7FAFC',
     LABEL: '#FE2472',
     INFO: '#11CDEF',
+    GREEN:'#53c653',
     ERROR: '#F5365C',
     SUCCESS: '#2DCE89',
     WARNING: '#FB6340',

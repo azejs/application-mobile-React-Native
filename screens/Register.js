@@ -24,12 +24,12 @@ class Register extends React.Component {
         >
           <Block safe flex middle>
             <Block style={styles.registerContainer}>
-              <Block flex={0.25} middle style={styles.socialConnect}>
-                <Text color="#8898AA" size={12}>
+               {/* <Block flex={0.25} middle style={styles.socialConnect}> */}
+                {/* <Text color="#8898AA" size={12}>
                   Sign up with
-                </Text>
-                <Block row style={{ marginTop: theme.SIZES.BASE }}>
-                  <Button style={{ ...styles.socialButtons, marginRight: 30 }}>
+                </Text> */}
+                {/* <Block row style={{ marginTop: theme.SIZES.BASE }}> */}
+                  {/* <Button style={{ ...styles.socialButtons, marginRight: 30 }}>
                     <Block row>
                       <Icon
                         name="logo-github"
@@ -40,8 +40,8 @@ class Register extends React.Component {
                       />
                       <Text style={styles.socialTextButtons}>GITHUB</Text>
                     </Block>
-                  </Button>
-                  <Button style={styles.socialButtons}>
+                  </Button> */}
+                  {/* <Button style={styles.socialButtons}>
                     <Block row>
                       <Icon
                         name="logo-google"
@@ -52,14 +52,14 @@ class Register extends React.Component {
                       />
                       <Text style={styles.socialTextButtons}>GOOGLE</Text>
                     </Block>
-                  </Button>
-                </Block>
-              </Block>
+                  </Button> */}
+                {/* </Block> */}
+              {/* </Block>   */}
               <Block flex>
                 <Block flex={0.17} middle>
-                  <Text color="#8898AA" size={12}>
+                  {/* <Text color="#8898AA" size={12}>
                     Or sign up the classic way
-                  </Text>
+                  </Text> */}
                 </Block>
                 <Block flex center>
                   <KeyboardAvoidingView

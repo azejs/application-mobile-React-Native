@@ -14,20 +14,21 @@ function CustomDrawerContent({ drawerPosition, navigation, profile, focused, sta
   const insets = useSafeArea();
   const screens = [
     "Home", 
-    "Profile",
+    // "Profile",
     "Account",
-    "Elements",
-    "Articles",
+    // "Elements",
+    // "Articles",
   ];
   return (
     <Block
       style={styles.container}
       forceInset={{ top: 'always', horizontal: 'never' }}
     >
-      <Block flex={0.06} style={styles.header}>
+      <Block flex={0.10} style={styles.header}>
         <Image styles={styles.logo} source={Images.Logo} />
+        <Text color="#32CD32" style={{ marginTop: 16, marginLeft: 8 }}>Match predictions</Text>
       </Block>
-      <Block flex style={{ paddingLeft: 8, paddingRight: 14 }}>
+      <Block flex style={{ paddingTop:20, paddingLeft: 8, paddingRight: 14 }}>
         <ScrollView style={{ flex: 1 }} showsVerticalScrollIndicator={false}>
           {screens.map((item, index) => {
               return (
@@ -54,8 +55,14 @@ function CustomDrawerContent({ drawerPosition, navigation, profile, focused, sta
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    
+  },
+  logo:{
+    backgroundColor: "#20810a",
+
   },
   header: {
+    // backgroundColor: "#20810a",
     paddingHorizontal: 28,
     paddingBottom: theme.SIZES.BASE,
     paddingTop: theme.SIZES.BASE * 3,

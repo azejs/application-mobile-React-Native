@@ -75,7 +75,7 @@ function ArticlesStack(props) {
           cardStyle: { backgroundColor: "#F8F9FE" }
         }}
       />
-            <Stack.Screen
+      <Stack.Screen
         name="Pro"
         component={Pro}
         options={{
@@ -146,11 +146,11 @@ function HomeStack(props) {
         options={{
           header: ({ navigation, scene }) => (
             <Header
-              title="Home"
-              search
-              options
-              navigation={navigation}
-              scene={scene}
+              title="Super Matchs"
+              // search
+              // options
+              // navigation={navigation}
+              // scene={scene}
             />
           ),
           cardStyle: { backgroundColor: "#F8F9FE" }
@@ -223,11 +223,12 @@ function AppStack(props) {
       }}
       initialRouteName="Home"
     >
+      {/* <Drawer.Screen name="Articles" component={ArticlesStack} /> */}
       <Drawer.Screen name="Home" component={HomeStack} />
-      <Drawer.Screen name="Profile" component={ProfileStack} />
+      {/* <Drawer.Screen name="Profile" component={ProfileStack} /> */}
       <Drawer.Screen name="Account" component={Register} />
-      <Drawer.Screen name="Elements" component={ElementsStack} />
-      <Drawer.Screen name="Articles" component={ArticlesStack} />
+      {/* <Drawer.Screen name="Elements" component={ElementsStack} /> */}
+      
     </Drawer.Navigator>
   );
 }
